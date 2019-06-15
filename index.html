@@ -3,14 +3,19 @@
     <head>
         <title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+	 <script src="main.js"></script> 
+</head>
     <body>
         <style>
+body {
+   margin:0;
+   padding:0;
+}
        
 .container {
 display: grid; 
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: 100px 50px 500px 100px;
+grid-template-rows: 100px 50px 400px 100px;
 grid-gap: 5px;
 grid-template-areas:
         "h h h h h h h h h h h h"
@@ -32,8 +37,17 @@ grid-template-areas:
 .content {
     grid-area: c;
     background-color:blue;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
-.footer {
+
+.video{
+   heigth:200px;
+   width:200px;
+   border-radius: 5px 5px;
+}
+   .footer {
    grid-area: f;
    background-color:orange;
 }
@@ -41,7 +55,11 @@ grid-template-areas:
         <div class="container">
 <div class="header">HEADER</div>
 <div class="menu">MENU</div>
-<div class="content">CONTENT</div>
+<div class="content">
+   <video class="video"controls>
+   <source src="videos/risadaOlivia.mp4" type="video/mp4">
+</video>
+</div>
 <div class="footer">FOOTER</div>
 </div>
     </body>
