@@ -1,6 +1,5 @@
-const gulp = require('gulp');
-const javascriptObfuscator = require('gulp-javascript-obfuscator');
+import { task } from 'gulp';
 
-gulp.task('cripto', function(){
+task('cripto', function(){
    return console.log("ola");
 });
