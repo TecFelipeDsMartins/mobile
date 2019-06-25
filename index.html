@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Page Title</title>
+        <script src="main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -15,7 +16,7 @@ grid-gap: 5px;
 grid-template-areas:
         "h h h h h h h h h h h h"
         "m m m m m m m m m m m m"
-	"c c c c c c c c c c c c"
+	    "c c c c c c c c c c c c"
         "f f f f f f f f f f f f";
 }
 
@@ -39,7 +40,9 @@ grid-template-areas:
 }
     </style>
         <div class="container">
-<div class="header">HEADER</div>
+<div class="header" id="header">HEADER
+    <button onclick="changeColor()">change color</button>
+</div>
 <div class="menu">MENU</div>
 <div class="content">CONTENT</div>
 <div class="footer">FOOTER</div>
